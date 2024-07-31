@@ -1,0 +1,33 @@
+.Homeproductimg img{
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+.caption{
+	font-size: 18px;
+	color: rebeccapurple;
+	font-display: fallback;
+	text-align: center;
+	font-weight: bold;
+	font-style: ;
+}
+.rotated-text {
+    display: inline-block; /* Ensure the element is treated as a block for transformation */
+    transform: rotate(45deg); /* Rotate the text 45 degrees */
+    transform-origin: center; /* Rotate around the center of the element */
+}
+.menu{
+	width: 80%;
+	margin-right: 0;
+}
+.searchbar{
+	border-radius: 20px;
+	width: 600px;
+	border: 2px;
+	border-color: lightskyblue;
+}
+.alldeals{
+	display: flex;
+	flex-direction: row;
+	border: none;
+}
