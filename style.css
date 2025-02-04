@@ -4,12 +4,12 @@
 	border-radius: 10px;
 }
 .caption{
-	font-size: 18px;
+	font-size: 25px;
 	color: rebeccapurple;
 	font-display: fallback;
 	text-align: center;
 	font-weight: bold;
-	font-style: ;
+	font-style: sans;
 }
 .rotated-text {
     display: inline-block; /* Ensure the element is treated as a block for transformation */
@@ -21,13 +21,142 @@
 	margin-right: 0;
 }
 .searchbar{
-	border-radius: 20px;
-	width: 600px;
-	border: 2px;
-	border-color: lightskyblue;
+	justify-content: center;
 }
-.alldeals{
+#searchbar{
+	width: 500px;
+	border-radius: 10px;
+	color: lightslategray;
+	justify-content: center;
+	
+}
+.deals{
+	border: none;
+	
+	align-items: center;
+	justify-content: center;
+}
+.card-title{
+	border-radius: 10px;
+	text-align: center;
+}
+
+.vegan{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	
+}
+
+.vegetarian, .ham{
 	display: flex;
 	flex-direction: row;
-	border: none;
+	flex-shrink: 1;
+	column-width: 300px;
 }
+
+.footer-contents {
+	display: flex;
+	flex-direction: column;
+	color: #1c3663;
+	overflow: hidden;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	
+  }
+  .footer-contents .navbar-left a {
+	float: left;
+	color: #344971;
+	text-align: center;
+	align-items: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  .navbar-left h5{
+	text-align: center;
+  }
+  
+  /* Change the color of links on hover */
+  .footer-contents a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  .footer-contents .navbar-right a {
+	float: left;
+	display: block;
+	color: #344971;
+	
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+ .alldeals h5{
+	text-align: center;
+	color: brown;
+	font-weight: bolder;
+ }
+ .row h5{
+	text-align: center;
+ }
+ input[type=text], select, textarea{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: vertical;
+  }
+  label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+  }
+  input[type=submit] {
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+  }
+  .container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+	  width: 100%;
+	  margin-top: 0;
+	}
+  }
